@@ -45,7 +45,7 @@ routes.get('/editar', (req, res) => {
         fs.writeFileSync("./assets/data/data.json", JSON.stringify(dataSports))
         res.send('editado')
     } else {
-        res.status(404).send('Deporte no encontrado')
+        res.status(404).send('Esta pagina no existe')
     }
 })
 
